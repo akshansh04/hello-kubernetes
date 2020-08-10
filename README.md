@@ -125,6 +125,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-kubernetes-custom
+  
 spec:
   replicas: 3
   selector:
