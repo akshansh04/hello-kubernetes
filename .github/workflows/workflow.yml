@@ -4,7 +4,7 @@ jobs:
     env:
       REGISTRY_URL: aksrivacr1.azurecr.io
       NAMESPACE: aksrivk8sba2f
-      IMAGE_NAME: aksrivk8s
+      IMAGE_NAME: nginx
       SECRET_NAME: aksrivk8s
 
     runs-on: ubuntu-latest
