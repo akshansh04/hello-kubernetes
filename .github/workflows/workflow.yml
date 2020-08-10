@@ -44,7 +44,7 @@ jobs:
 #         container-registry-password: ${{ secrets.aksrivACR1_b6c55_password }}
 #         secret-name: ${{ env.SECRET_NAME  }}
        
-    - uses: azure/k8s-deploy@testKodey
+    - uses: azure/k8s-deploy@users/koushdey/nestedAnnotations
       with:
         namespace: default
 #         namespace: ${{ env.NAMESPACE  }}
