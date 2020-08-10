@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: aksrivk8s
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: aksrivk8s
+  template:
+    metadata:
+      labels:
+        app: aksrivk8s
+    spec:
+      containers:
+        - name: aksrivk8s
+          image: aksrivacr1.azurecr.io/aksrivk8s
+          ports:
+          - containerPort: 80
