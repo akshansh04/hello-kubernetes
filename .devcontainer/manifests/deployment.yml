@@ -14,8 +14,9 @@ spec:
     spec:
       containers:
       - name: aksrivk8s
-        image: aksrivacr1.azurecr.io/aksrivk8s
+        image: nginx
+#         image: aksrivacr1.azurecr.io/aksrivk8s
         ports:
         - containerPort: 80  
-      imagePullSecrets:
-      - name: regcred
+#       imagePullSecrets:
+#       - name: regcred
