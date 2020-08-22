@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: "aksrivk8s-f741"
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: "aksrivk8s-f741"
+    spec:
+      containers:
+        - name: "aksrivk8s-f741"
+          image: "aksrivacr1.azurecr.io/aksrivk8s"
+          ports:
+          - containerPort: 80
