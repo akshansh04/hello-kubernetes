@@ -1,9 +1,12 @@
-apiVersion : apps/v1beta1
+apiVersion : apps/v1
 kind: Deployment
 metadata:
   name: "aksrivk8s-f741"
 spec:
   replicas: 2
+  selector:
+    matchLabels:
+      app: aksrivk8s-f741
   template:
     metadata:
       labels:
