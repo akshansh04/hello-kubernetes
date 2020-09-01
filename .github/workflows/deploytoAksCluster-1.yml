@@ -1,5 +1,4 @@
 on: [push]
-name: Demo-anurag
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
