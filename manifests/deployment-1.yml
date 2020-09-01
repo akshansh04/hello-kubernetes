@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: "akskodey-d354"
-          image: "aksrivacr1.azurecr.io/akskodey"
+          image: "nginx"
           ports:
           - containerPort: 80
