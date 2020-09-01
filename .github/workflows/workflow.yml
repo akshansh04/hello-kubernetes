@@ -54,7 +54,7 @@ jobs:
           
 
         images: nginx
-#         |
+        #         |
 #           ${{ env.REGISTRY_URL }}/${{ env.IMAGE_NAME  }}:${{ github.sha }}
 #         imagepullsecrets: |
 #           ${{ env.SECRET_NAME  }}
