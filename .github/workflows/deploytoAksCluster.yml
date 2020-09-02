@@ -38,7 +38,7 @@ jobs:
         container-registry-password: ${{ secrets.acr_aksrivacr1_password }}
         secret-name: aksrivk8sdockerauth
        
-    - uses: azure/k8s-deploy@users/koushdey/workflowAnnotations
+    - uses: azure/k8s-deploy@users/koushdey/workflowAnnotations1
       with:
         namespace: aksrivk8s3456
         manifests: |
