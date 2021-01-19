@@ -1,21 +1,21 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: aksrivk8s
+  name: aksrivk8s-new
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: aksrivk8s
+      app: aksrivk8s-new
   template:
     metadata:
       labels:
-        app: aksrivk8s
+        app: aksrivk8s-new
     spec:
       containers:
-      - name: aksrivk8s
+      - name: aksrivk8s-new
         image: nginx
-#         image: aksrivacr1.azurecr.io/aksrivk8s
+#         image: aksrivacr1.azurecr.io/aksrivk8s-new
         ports:
         - containerPort: 80  
 #       imagePullSecrets:
