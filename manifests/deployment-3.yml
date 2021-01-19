@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: "aksrivk8snew-e8ce"
-          image: "aksrivacr1.azurecr.io/aksrivk8snew"
+          image: "nginx"
           ports:
           - containerPort: 80
