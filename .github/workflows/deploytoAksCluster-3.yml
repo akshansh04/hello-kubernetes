@@ -45,6 +45,6 @@ jobs:
           manifests/deployment-3.yml
           manifests/service-3.yml
         images: |
-          aksrivacr1.azurecr.io/aksrivk8snew:${{ github.sha }}
+         nginx
         imagepullsecrets: |
           aksrivk8snewdockerauth
