@@ -44,7 +44,7 @@ jobs:
 #         container-registry-password: ${{ secrets.aksrivACR1_b6c55_password }}
 #         secret-name: ${{ env.SECRET_NAME  }}
        
-    - uses: azure/k8s-deploy@v1 #users/koushdey/workflowAnnotations
+    - uses: azure/k8s-deploy@v1.2 #users/koushdey/workflowAnnotations
       with:
         namespace: default
 #         namespace: ${{ env.NAMESPACE  }}
