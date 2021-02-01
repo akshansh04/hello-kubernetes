@@ -17,7 +17,7 @@ jobs:
         docker build "$GITHUB_WORKSPACE/.devcontainer" -f  ".devcontainer/Dockerfile" -t aksrivacr1.azurecr.io/aksrivk8snew:${{ github.sha }}
         docker push aksrivacr1.azurecr.io/aksrivk8snew:${{ github.sha }}
     
-    - uses: azure/k8s-set-context@v1123213
+    - uses: azure/k8s-set-context@v1
       with:
          kubeconfig: ${{ secrets.aks_aksrivk8snew_kubeConfig }}
       id: login
